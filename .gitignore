@@ -1,0 +1,13 @@
+CHANGELOG
+temp/
+runtime/
+reobf/
+logs/
+lib/
+jars/
+eclipse/
+docs/
+conf/
+bin/
+*.bat
+*.sh
