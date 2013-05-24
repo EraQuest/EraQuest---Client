@@ -216,6 +216,35 @@ public class Block
     public static final Block railActivator = (new BlockRailPowered(157)).setHardness(0.7F).setStepSound(soundMetalFootstep).setUnlocalizedName("activatorRail");
     public static final Block dropper = (new BlockDropper(158)).setHardness(3.5F).setStepSound(soundStoneFootstep).setUnlocalizedName("dropper");
 
+    
+    
+    //News Blocks
+    
+    
+    
+    //Escalier
+     public static final Block clothStairs0 = new BlockStairs(175, cloth, 0);
+     public static final Block clothStairs1 = new BlockStairs(176, cloth, 1);
+     public static final Block clothStairs2 = new BlockStairs(177, cloth, 2);
+     public static final Block clothStairs3 = new BlockStairs(178, cloth, 3);
+     public static final Block clothStairs4 = new BlockStairs(179, cloth, 4);
+     public static final Block clothStairs5 = new BlockStairs(180, cloth, 5);
+     public static final Block clothStairs6 = new BlockStairs(181, cloth, 6);
+     public static final Block clothStairs7 = new BlockStairs(182, cloth, 7);
+     public static final Block clothStairs8 = new BlockStairs(183, cloth, 8);
+     public static final Block clothStairs9 = new BlockStairs(184, cloth, 9);
+     public static final Block clothStairs10 = new BlockStairs(185, cloth, 10);
+     public static final Block clothStairs11 = new BlockStairs(186, cloth, 11);
+     public static final Block clothStairs12 = new BlockStairs(187, cloth, 12);
+     public static final Block clothStairs13 = new BlockStairs(188, cloth, 13);
+     public static final Block clothStairs14 = new BlockStairs(189, cloth, 14);
+     public static final Block clothStairs15 = new BlockStairs(190, cloth, 15);
+     //Fin Escalier
+     
+     
+     public static final Block colorGlass = new BlockColorGlass(191).setCreativeTab(CreativeTabs.tabBlock).setHardness(0.3F).setStepSound(soundGlassFootstep).setUnlocalizedName("colorGlass");
+     
+     
     /** ID of the block. */
     public final int blockID;
 
@@ -1325,6 +1354,8 @@ public class Block
         Item.itemsList[pistonStickyBase.blockID] = new ItemPiston(pistonStickyBase.blockID - 256);
         Item.itemsList[cobblestoneWall.blockID] = (new ItemMultiTextureTile(cobblestoneWall.blockID - 256, cobblestoneWall, BlockWall.types)).setUnlocalizedName("cobbleWall");
         Item.itemsList[anvil.blockID] = (new ItemAnvilBlock(anvil)).setUnlocalizedName("anvil");
+
+        Item.itemsList[colorGlass.blockID] = (new ItemMultiTextureTile(colorGlass.blockID - 256, colorGlass, BlockWood.woodType)).setUnlocalizedName("colorGlass");
 
         for (int var0 = 0; var0 < 256; ++var0)
         {
